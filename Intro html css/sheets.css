@@ -1,0 +1,134 @@
+body{
+    background-color: antiquewhite;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+#header{
+    margin: 10px;
+    background-color: cornflowerblue;
+    height: 90px;
+    border-radius: 5px;
+}
+.logo{
+    display: block;
+    border-radius: 15px;
+    max-width: 100%;
+    max-height: 100%;
+    float: left;
+}
+.logo:hover{
+    opacity: 0.4;
+}
+#navbar ul li{
+display: inline;
+vertical-align: middle;
+}
+#navbar ul{
+    background-color: black;
+    margin: 10px;
+    list-style-type: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 5px;
+}
+#navbar ul li a{
+    text-decoration: none;
+    font-family: Arial;
+    color: white;
+    background-color: black;
+    padding: .3em 1em;
+}#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#main{
+    background-color: aqua;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 360px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: 110%;
+}
+#footer{
+    margin: 10px;
+    background-color: aqua;
+    height: 30px;
+    font-size: 90%;
+    text-align: center;
+    padding: 5px;
+    color: rgba(255, 0, 13, 0.904);
+    clear: both;
+    border-radius: 5px;
+}
+.rightSide{
+    background-color: aqua;
+    width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: 105%;
+    float:right;
+    clear: right;
+}
+.imagebar{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    float: right;
+    width: 300px;
+    clear: right;
+    /*opacity: 1.0;*/
+    transition: opacity 0.5s ease-in-out;
+}
+.imagebar:hover{
+    opacity: 0.4;
+}
+h2{
+    font-size: 120%;
+    color: blue
+}
+h1{
+    font-size: 250%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: blue;
+    margin:0px;
+
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.ul{
+    padding: 15px;
+    list-style-type: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 110%;
+}
+.ul li a{
+    text-decoration: none;
+}
+.ul li a:hover{
+    background-color: cornflowerblue;
+}
+@media(max-width:600px){
+    .rightSide{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    #main{
+        float: left;
+    }
+}
