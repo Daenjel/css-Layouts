@@ -132,3 +132,12 @@ h1{
         float: left;
     }
 }
+iframe{
+    border: none;
+}
+#conte{
+    background-color: aqua;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 110%;
+}

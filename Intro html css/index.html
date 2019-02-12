@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>RemoSoft</title>
+        <title id="mTitle" >RemoSoft</title>
         <link rel="stylesheet" href="sheets.css"/>
-        <link rel="icon" href="anonymous.jpg"/>
+        <link rel="icon" href="pics/anonymous.jpg"/>
     </head>
     <body>
         <div id="header">
-                <img class="logo" src="indexw.jpg"/>
-            <h1> RemoSoft</h1>
+                <img class="logo" src="pics/indexw.jpg"/>
+            <h1 id="mHeader"> RemoSoft</h1>
         </div>
         <div id="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a id="prod" href="products.html" target="mainFrame">Products</a></li>
+                <li><a id="cont" href="contacts.html" target="mainFrame">Contacts</a></li>
+                <li><a id="abt" href="about.html" target="mainFrame">About</a></li>
             </ul>
         </div>
         <div class="rightSide">
@@ -25,32 +25,39 @@
                 <li><a target="_blank" href="https://www.google.com/search?client=firefox-b-d&q=travelling">Travelling</a></li>
                 <li><a target="_blank" href="https://www.google.com/search?client=firefox-b-d&q=studying">Studying</a></li>
                 <li><a target="_blank" href="https://www.google.com/search?client=firefox-b-d&q=coding">Coding</a></li>
-                <li><a target="_blank" href="https://www.google.com/search?client=firefox-b-d&q=walki+in+the+park">Walk in the park</a></li>
+                <details>
+                    <summary>Walk in the park</summary>
+                    <li><a target="_blank" href="https://www.google.com/search?client=firefox-b-d&q=walki+in+the+park">Walk in the park</a></li>
+                    <audio controls autoplay >
+                        <source src="DJ LYTA & VDJ JONES - FULLY LOADED MIX.mp3"/>
+                        </audio>
+                </details>
+                <details>
+                    <summary>Dundaing</summary>
                 <li><a target="_blank" href="https://www.google.com/search?client=firefox-b-d&q=dundaing">Dundaing</a></li>
+                <video controls src="1Xtra in Jamaica - Chronixx & Koffee - Real Rock Riddim.mp4" 
+                        width="300px" height="300px">
+
+                </video>
+                </details>
             </em>
             </ul>
         </div>
         <div class="rightSide">
-            <img class="imagebar" src="computer_upgrade_1868875.jpg"/>
+            <img id="imageView"  class="imagebar" src="pics/computer_upgrade_1868875.jpg"/>
         </div>
         <div id="main">
-            <h2>Introduction</h2>
-            <p>
-                    Among the apartments located along Mombasa road is the Lifestyle Gardens apartments. The building which has 84 houses is at the moment fully occupied. However, this large number of tenants has posed a great challenge when it comes to payment of their water bills. This has led to the landlord’s desire for a computerized water payment system as opposed to the manual door to door water bill collection that has proven tiresome and disadvantageous.</p>
-                <p>    The fact that some of the tenants have developed a habit of delayed and late payments has forced the need to develop and effective and efficient system to curb this recurring vice. The landlord has wished that the system be designed in a way that rationing of water to be a condition to prompt punctual payment. The strategy considered is that those students who make their full payment in time get access to water 24 hours every day. In contrary, those who don’t make full payments will be subjected to having water flow into their houses three hours in the morning as well as in the evening. Moreover for those who make no payment at all will be confined to receiving water only three hours per day in the morning only.</p>
-            <p>    Considering the fact that the monthly rent is 10,000 Kenya Shillings, the landlord plans to acknowledge those who pay 3months in advance. The concerned will receive 0.1% discount and this is expected to encourage early payments. On the other hand, a penalty of 0.2% will be added to the rent of those who make late payment beyond the 5th day of every month.
-                    
-            </p>
-            <h2>Work Flow</h2>
-            <p>
-                    Among the apartments located along Mombasa road is the Lifestyle Gardens apartments. The building which has 84 houses is at the moment fully occupied. However, this large number of tenants has posed a great challenge when it comes to payment of their water bills. This has led to the landlord’s desire for a computerized water payment system as opposed to the manual door to door water bill collection that has proven tiresome and disadvantageous.</p>
-                <p>    The fact that some of the tenants have developed a habit of delayed and late payments has forced the need to develop and effective and efficient system to curb this recurring vice. The landlord has wished that the system be designed in a way that rationing of water to be a condition to prompt punctual payment. The strategy considered is that those students who make their full payment in time get access to water 24 hours every day. In contrary, those who don’t make full payments will be subjected to having water flow into their houses three hours in the morning as well as in the evening. Moreover for those who make no payment at all will be confined to receiving water only three hours per day in the morning only.</p>
-            <p>    Considering the fact that the monthly rent is 10,000 Kenya Shillings, the landlord plans to acknowledge those who pay 3months in advance. The concerned will receive 0.1% discount and this is expected to encourage early payments. On the other hand, a penalty of 0.2% will be added to the rent of those who make late payment beyond the 5th day of every month.
-                    
-            </p>
+                <iframe src="content.html" frameborder="1" width="100%" onload="resizeIframe(this)" scrolling="no" name="mainFrame">
+                    </iframe>
         </div>
         <div id="footer">
             &COPY; 2019 RemoSoft. All Rights Reserved.
         </div>
     </body>
+    <script src="events.js"></script>
+    <script type="text/javascript">
+        function resizeIframe(iframe) {
+            iframe.height = iframe.contentWindow.document.body.scrollHeight + "px"; 
+                }
+      </script> 
 </html>
